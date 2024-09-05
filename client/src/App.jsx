@@ -1,4 +1,4 @@
-import { BrowserRouter,Routes, Route } from "react-router-dom";
+import { BrowserRouter,Routes, Route, Navigate } from "react-router-dom";
 // import { Button } from "./components/ui/button";
 // import React from "react";
 import Auth from "./pages/auth";
@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/auth" element={<Auth />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/profile" element={<Profile />} />
-        {/* <Route path="*" element={<AuthNavigate to="/auth" />} /> */}
+        <Route path="*" element={<Navigate to="/auth" />} />
       </Routes>
     </BrowserRouter>
   )
