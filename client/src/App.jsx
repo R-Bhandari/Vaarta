@@ -1,6 +1,6 @@
-import { BrowserRouter } from "react-router-dom";
-import { Button } from "./components/ui/button"
-import React from "react";
+import { BrowserRouter,Routes, Route } from "react-router-dom";
+// import { Button } from "./components/ui/button";
+// import React from "react";
 import Auth from "./pages/auth";
 import Profile from "./pages/profile";
 import Chat from "./pages/chat";
@@ -12,7 +12,7 @@ const App = () => {
         <Route path="/auth" element={<Auth />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="*" element={<AuthNavigate to="/auth" />} />
+        {/* <Route path="*" element={<AuthNavigate to="/auth" />} /> */}
       </Routes>
     </BrowserRouter>
   )
