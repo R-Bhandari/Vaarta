@@ -1,9 +1,9 @@
-import { Victory } from "@/assets/victory.svg"
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+//import { Victory } from "@/assets/victory.svg"
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import { Background } from "@/assets/login2.png"
+//import { Background } from "@/assets/login2.png"
 
 const Auth = () => {
 
@@ -25,7 +25,7 @@ const Auth = () => {
                     <div className="flex items-centere justify-center flex-col">
                         <div className="flex items-center justify-center">
                             <h1 className="text-5xl font-bold md:text-6xl">Welcome</h1>
-                            <img src={Victory} alt="victory-image" className="h-[100px]" />
+                            {/* <img src={Victory} alt="victory-image" className="h-[100px]" /> */}
                         </div>
                         <p className="font-medium text-center">Fill in the details to get started with best Chat App</p>
                     </div>
@@ -92,7 +92,7 @@ const Auth = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center ">
-                    <img src={Background} alt="background-image-login" className="hidden xl:flex justify-center items-center" />
+                    {/* <img src={Background} alt="background-image-login" className="hidden xl:flex justify-center items-center" /> */}
                 </div>
             </div>
         </div>
