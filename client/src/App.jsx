@@ -1,11 +1,11 @@
-import { BrowserRouter,Routes, Route, Navigate } from "react-router-dom";
-// import { Button } from "./components/ui/button";
-// import React from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import React from "react";
 import Auth from "./pages/auth";
 import Profile from "./pages/profile";
 import Chat from "./pages/chat";
-const App = () => {
 
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="*" element={<Navigate to="/auth" />} />
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default App;
