@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { GrAttachment } from "react-icons/gr";
-import { RiEmogiStickerLine } from "react-icons/ri";
+import { RiEmojiStickerLine } from "react-icons/ri";
 import { IoSend } from "react-icons/io5";
-import { EmojiPicker } from "emoji-picker-react";
+import  EmojiPicker  from "emoji-picker-react";
 
 const MessageBar = () => {
     const emojiRef = useRef()
@@ -45,7 +45,7 @@ const MessageBar = () => {
                   className="text-neutral-500 focus:border-none focus:outline-none focus:text-white duration-300 transition-all"
                   onClick={() => setEmojiPickerOpen(true)}
                 >
-                    <RiEmogiStickerLine className="text-2xl" />
+                    <RiEmojiStickerLine className="text-2xl" />
                 </button>
                 <div className="absolute bottom-16 right-0" ref={emojiRef}>
                     <EmojiPicker
