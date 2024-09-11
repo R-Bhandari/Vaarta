@@ -1,5 +1,6 @@
 
-import Lottie from 'react-lottie'
+import { animationDefaultOptions } from '@/lib/utils';
+import Lottie from 'react-lottie';
 
 function EmptyChatContainer() {
   return (
@@ -20,4 +21,4 @@ function EmptyChatContainer() {
   )
 }
 
-export default EmptyChatContainer
+export default EmptyChatContainer;
