@@ -76,4 +76,4 @@ const NewDm = () => {
   )
 }
 
-export default NewDm
+export default NewDm;

@@ -1,16 +1,13 @@
-import { Avatar, AvatarImage } from "@/components/ui/avatar"
-import { useAppStore } from "@/store"
-import { HOST, LOGOUT_ROUTE } from "@/utils/constants"
-import { getColor } from "@/lib/utils"
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { useAppStore } from "@/store";
+import { HOST, LOGOUT_ROUTE } from "@/utils/constants";
+import { getColor } from "@/lib/utils";
 
-import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip"
-
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-
-import { FiEdit2 } from "react-icons/fi"
-import { IoPowerSharp } from "react-icons/io5"
-import { useNavigate } from "react-router-dom"
-import { apiClient } from "@/lib/api-client"
+import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/components/ui/tooltip";
+import { FiEdit2 } from "react-icons/fi";
+import { IoPowerSharp } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
+import { apiClient } from "@/lib/api-client";
 
 const ProfileInfo = () => {
     const {userInfo, setUserInfo} = useAppStore();

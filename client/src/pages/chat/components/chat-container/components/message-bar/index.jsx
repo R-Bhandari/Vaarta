@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { GrAttachment } from "react-icons/gr";
 import { RiEmojiStickerLine } from "react-icons/ri";
 import { IoSend } from "react-icons/io5";
-import { EmojiPicker } from "emoji-picker-react";
+import  EmojiPicker  from "emoji-picker-react";
 
 const MessageBar = () => {
     const emojiRef = useRef()
