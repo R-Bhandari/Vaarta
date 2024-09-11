@@ -13,7 +13,7 @@ function EmptyChatContainer() {
         />
         <div className="text-opacity-80 text-white flex flex-col gap-5 items-center mt-10 lg:text-4xl text-3xl transition-all duration-300 text-center">
           <h3 className="poppins-medium">
-            Hi <span className="purple-500">!</span> Welcome To <span className="purple-500">Vaarta!!</span>
+            Hi <span className="text-purple-500">!</span> Welcome To <span className="text-purple-500">Vaarta!!</span>
           </h3>
         </div>
 
