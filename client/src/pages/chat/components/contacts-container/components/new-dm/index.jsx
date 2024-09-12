@@ -75,7 +75,7 @@ const NewDM = () => {
                 </div>
                 <ScrollArea className="h-[250px]">
                     <div className="flex flex-col gap-5">
-                        {searchContacts.map((contact) => (
+                        {searchedContacts.map((contact) => (
                             <div key={contact._id} className="flex gap-3 items-center
                             cursor-pointer">
                                  <div className="w-12 h-12 relative">
@@ -105,7 +105,7 @@ const NewDM = () => {
                     <span className="text-xs">{contact.email}</span>
                     </div>
                     </div>
-                        ))}
+                ))}
                     </div>
                 </ScrollArea>
                 {
