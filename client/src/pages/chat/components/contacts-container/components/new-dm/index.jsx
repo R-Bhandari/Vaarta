@@ -93,18 +93,18 @@ const NewDM = () => {
                                 ? contact.firstName.split("").shift()
                                 : contact.email.split("").shift()
                             }
-                        </div>
+                    </div>
                     )}
                 </Avatar>
-            </div>
+                            </div>
             <div className="flex flex-col">
             <span>{contact.firstName && contact.lastName 
                     ? `${contact.firstName} ${contact.lastName}` 
                     : contact.email}
                     </span>
                     <span className="text-xs">{contact.email}</span>
-                    </div>
-                    </div>
+                </div>
+            </div>
                 ))}
                     </div>
                 </ScrollArea>
