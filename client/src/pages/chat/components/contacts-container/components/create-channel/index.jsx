@@ -56,7 +56,7 @@ const CreateChannel = () => {
         } catch (error) {
             console.log(error);
         }
-    } 
+    }; 
 
 
   return (

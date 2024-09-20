@@ -27,14 +27,14 @@ const ContactsContainer = () => {
       const response = await apiClient.get(GET_USER_CHANNELS_ROUTE, {
         withCredentials: true,
       });
-      if (response.data.contacts) {
+      if (response.data.channels) {
         setChannels(response.data.channels);
       }
     };
 
-    getContacts()
-    getChannels()
-  },[]);
+    getContacts();
+    getChannels();
+  },[setChannels, setDirectMessagesContacts]);
 
   return (
     <div className='relative md:w-[35vw] lg:w-[30vw] xl:w-[20vw] bg-[#1b1c24] border-r-2 border-[#2f303b] w-full'>
